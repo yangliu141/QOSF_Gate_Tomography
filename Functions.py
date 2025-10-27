@@ -10,7 +10,7 @@ def tensor(gate_list):
 
 
 
-#Function for applying a single qubit gate on qubit q to a 8x8 Unitary U
+#Apply a single qubit gate on one qubit of a unitary U
 def apply_sqg(U,gate,qubit):
     matrix = [I(), I(), I()]
     matrix[qubit] = gate
@@ -19,13 +19,14 @@ def apply_sqg(U,gate,qubit):
 
 
 
-#Function for applying CNOT with control = c and target = t to a Unitary U
+#Apply CNOT with control qubit c and target qubit t on a unitary U
 def apply_cnot(U, c, t):
     cnot = CNOT(c, t)
     return cnot @ U
 
 
-
+#Creates the 3-qubit unitary for the custom gate
+#Input: p, list of six parameteres used for the two U3-gates
 def create_circuit_Unitary(p):
 
     #Gates 
