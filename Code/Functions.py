@@ -25,7 +25,7 @@ def apply_cnot(U, c, t):
     return cnot @ U
 
 
-#Creates the 3-qubit unitary for the custom gate
+#Creates the 3-qubit unitary for the custom circuit
 #Input: p, list of six parameteres used for the two U3-gates
 def create_circuit_Unitary(p):
 
