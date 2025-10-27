@@ -2,13 +2,16 @@
 
 ## Description 
 
-This repo is the solution to the screening task 1 - Gate Tomography for the QOSF Mentorship program Cohort 11.
+This repository contains my solution to the Screening Task 1 - Gate Tomography for the QOSF Mentorship program Cohort 11.
 
-My results show that the hidden parameters of the first U3 - gate are ($\frac{\pi}{2}, 0, \pi$) and 
-the hidden parameters of the second are ($0, 0, -\frac{\pi}{4}$). This is equivalent to a $H$-gate and a $T^\dagger$-gate.
+The objective of the task is to determine the hidden parameters of two unknow U3 gates in a quantum circuit such that the circuit becomes equivalent to a Toffoli gate. 
+My results show that the hidden parameters are: 
+- U3($\frac{\pi}{2}, 0, \pi$) for the first gate 
+- U3($0, 0, -\frac{\pi}{4}$) for the second gate
 
-Here you will find instructions on how to clone, install and run neccesary files, 
-and a structured overview of the folders and files.
+This is equivalent to a $H$-gate and a $T^\dagger$-gate.
+
+Here you will find instructions on how to clone, install and run the necessary files. In addition to a structured overview of the folders and files.
 
 ## Project Prerequisites
 Before installation, make sure you have:
@@ -21,8 +24,8 @@ Before installation, make sure you have:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.uio.no/yangliu/FYS-STK3155_Project1.git
-   cd FYS-STK3155_Project1
+   git clone https://github.com/yangliu141/QOSF_Gate_Tomography.git
+   cd QOSF_Gate_Tomography
    ```
 
 2. Install dependencies:
@@ -32,15 +35,15 @@ Before installation, make sure you have:
 
 3. Run the project (see [workflow](#workflow)):
    ```bash
-   python file_name.ipynb
+   jupyter notebook Results.ipynb
    ```
 
 ## Description and Structure of `Code/`
 
 ### `Gates.py`
-
+- Implements quantum gates using NumPy arrays
 ### `Functions.py`
-
+- Contains functions for building the unitary for the custom circuit
 ### `Results.ipynb`
-
-### `Implementation`
+- Parameter search for the hidden U3 gates
+- Visualization and comparison to Qiskit´s Toffoli gate decomposition
