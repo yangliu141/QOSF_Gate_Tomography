@@ -33,7 +33,7 @@ Before installation, make sure you have:
    pip install -r requirements.txt
    ```
 
-3. Run the project (see [workflow](#workflow)):
+3. Run the project:
    ```bash
    jupyter notebook Results.ipynb
    ```
