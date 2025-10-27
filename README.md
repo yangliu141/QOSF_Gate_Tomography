@@ -4,14 +4,14 @@
 
 This repository contains my solution to the Screening Task 1 - Gate Tomography for the QOSF Mentorship program Cohort 11.
 
-The objective of the task is to determine the hidden parameters of two unknow U3 gates in a quantum circuit such that the circuit becomes equivalent to a Toffoli gate. 
+The objective of the task is to determine the hidden parameters of two unknown U3 gates in a quantum circuit such that the circuit becomes equivalent to a Toffoli gate. 
 My results show that the hidden parameters are: 
 - U3($\frac{\pi}{2}, 0, \pi$) for the first gate 
 - U3($0, 0, -\frac{\pi}{4}$) for the second gate
 
 This is equivalent to a $H$-gate and a $T^\dagger$-gate.
 
-Here you will find instructions on how to clone, install and run the necessary files. In addition to a structured overview of the folders and files.
+Here you will find instructions on how to clone, install and run the necessary files, as well as a structured overview of the folders and files.
 
 ## Project Prerequisites
 Before installation, make sure you have:
@@ -35,13 +35,13 @@ Before installation, make sure you have:
 
 3. Run the project:
    ```bash
-   jupyter notebook Results.ipynb
+   jupyter notebook Code/Results.ipynb
    ```
 
 ## Description and Structure of `Code/`
 
 ### `Gates.py`
-- Implements quantum gates using NumPy arrays
+- Implementation of quantum gates using NumPy arrays
 ### `Functions.py`
 - Contains functions for building the unitary for the custom circuit
 ### `Results.ipynb`
