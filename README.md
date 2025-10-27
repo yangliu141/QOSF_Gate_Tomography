@@ -35,7 +35,7 @@ Before installation, make sure you have:
 
 3. Run the project:
    ```bash
-   jupyter notebook Results.ipynb
+   jupyter notebook Code/Results.ipynb
    ```
 
 ## Description and Structure of `Code/`
